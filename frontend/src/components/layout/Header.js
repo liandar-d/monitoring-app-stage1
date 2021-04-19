@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import AuthOptions from '../auth/AuthOptions';
 
+
 class Header extends Component {
    
     render() { 
