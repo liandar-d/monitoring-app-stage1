@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import UserContext from "../../context/userContext";
 import ErrorNotice from "../../components/misc/ErrorNotice";
-import styles from "../../context/styles.css";
+// import '../../styles.css'
 
 function Register () {
 
@@ -38,21 +38,35 @@ function Register () {
     };
    
     return ( 
-        <div  class ="contact-form" className="register">
-            <h2>Register</h2>
-            {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
-            <form class="contact" onSubmit={submit}>
-                <label>Email: </label>
-                <input type="email" id="email" onChange={e => setEmail(e.target.value)}/>
-                <label>Password: </label>
-                <input type="password" id="password" onChange={e => setPassword(e.target.value)}/>
-                <input type="password" placeholder="Confirm password" onChange={e => setPasswordCheck(e.target.value)}/>
-                <label>Display name </label>
-                <input type="text" id="dsplay-name" onChange={e => setDisplayName(e.target.value)}/>
-                <input type="submit" value="Register" className="btn btn-primary" />
-            </form>
+        <div class=" ">
+            
+            <div  class ="" className="register"><br/>
+                <h2>Register</h2><br/>
+                {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
+                <form class="" onSubmit={submit}>
+                    <label>Email: </label><br/>
+                    <input type="email" id="email" onChange={e => setEmail(e.target.value)}/> <br/><br/>
+                    <label>Password: </label><br/>
+                    <input type="password" id="password" onChange={e => setPassword(e.target.value)}/><br/><br/>
+                    <label> Confirm Password: </label><br/>
+                    <input type="password"  onChange={e => setPasswordCheck(e.target.value)}/> <br/> <br/>
+                    <label>Display name </label><br/>
+                    <input type="text" id="dsplay-name" onChange={e => setDisplayName(e.target.value)}/> <br/><br/><br/>
+                    <input type="submit" value="Register" className="btn btn-primary" />
+                </form>
+            </div>
         </div>
         );
 }
  
 export default Register;
+
+{/* <div class="contact-form">
+<h2>Contact Us</h2>
+<form class="contact" action="" method="post">
+  <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+  <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+  <input type="submit" name="submit" class="send-btn" value="Send">
+</form>
+</div> */}

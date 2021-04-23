@@ -30,14 +30,14 @@ function Login () {
     };
     
     return (
-        <div className="login">
-            <h2>Login</h2>
+        <div className="login"><br/>
+            <h2>Login</h2><br/>
             {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
             <form onSubmit={submit}>
-                <label>Email: </label>
-                <input type="email" id="email" onChange={e => setEmail(e.target.value)}/>
-                <label>Password: </label>
-                <input type="password" id="password" onChange={e => setPassword(e.target.value)}/>
+                <label>Email: </label> <br/>
+                <input type="email" id="email" onChange={e => setEmail(e.target.value)}/> <br/><br/>
+                <label>Password: </label><br/>
+                <input type="password" id="password" onChange={e => setPassword(e.target.value)}/> <br/><br/><br/>
                 <input type="submit" value="Login" className="btn btn-primary" />
             </form>
         </div>

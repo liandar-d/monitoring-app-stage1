@@ -6,13 +6,21 @@
   display:flex;
   align-items:center;
   justify-content: space-between;
-  background-color: #66004d;
+  background-color: #357bbd;
+  text-align: center;
+
 }
 .header a{
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  text-align: center;
+
 }
 .register{
+  text-align:center;
+
+}
+.login{
   text-align:center;
 
 }
