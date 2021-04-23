@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import axios from "axios";
 import UserContext from "../../context/userContext";
 import ErrorNotice from "../../components/misc/ErrorNotice";
+import styles from "../../context/styles.css";
 
 function Register () {
 
@@ -37,10 +38,10 @@ function Register () {
     };
    
     return ( 
-        <div className="register">
+        <div  class ="contact-form" className="register">
             <h2>Register</h2>
             {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
-            <form onSubmit={submit}>
+            <form class="contact" onSubmit={submit}>
                 <label>Email: </label>
                 <input type="email" id="email" onChange={e => setEmail(e.target.value)}/>
                 <label>Password: </label>
