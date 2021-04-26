@@ -2,16 +2,16 @@
   text-align: center;
 }
 
-.header{
+.headers{
+  text-align: center;
   display:flex;
   align-items:center;
   justify-content: space-between;
   background-color: #357bbd;
-  text-align: center;
 
 }
-.header a{
-  color: rgb(0, 0, 0);
+.headers a{
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-align: center;
 
@@ -20,8 +20,13 @@
   text-align:center;
 
 }
-.login{
+.login {
   text-align:center;
+
+}
+.headers{
+  text-align:center;
+
 
 }
 /* .register input{ */

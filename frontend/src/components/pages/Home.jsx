@@ -12,9 +12,9 @@ function Home () {
 
     }, []);
     return (
-        <div>
+        <div className="login"><br/>
             {userData.user ? (
-                <h1>Welcome {userData.user.displayName}</h1>
+                <h1>Welcome to xOverTime {userData.user.displayName}</h1>
             ) : (
                 <>
                     <h2>You are not logged in</h2>

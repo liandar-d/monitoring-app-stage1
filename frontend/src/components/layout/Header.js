@@ -7,8 +7,9 @@ class Header extends Component {
    
     render() { 
         return ( 
-            <header className="header">
-                <Link to="/"><h1 className="title">xOvertime</h1></Link>
+            <header className="headers">
+                <Link to=""><img src={require('./logo.png')} /></Link>
+                
                 <AuthOptions />
             </header>
          );
